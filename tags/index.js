@@ -1,3 +1,10 @@
+
+// js
+
+
+
+
+// tags
 const testDialog = document.querySelector("#testDialog");
 const showBtn = document.querySelector("#showBtn");
 const submitBtn = document.querySelector("#submitBtn");
