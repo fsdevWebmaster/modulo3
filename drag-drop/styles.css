@@ -1,0 +1,21 @@
+.spots-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1em auto;
+}
+
+.item, .drop-zone {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item {
+  width: 100%;
+}
+
+.drop-zone {
+  width: 90%;
+  margin: 0 auto;
+  height: 25vh;
+}
