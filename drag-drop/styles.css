@@ -17,5 +17,6 @@
 .drop-zone {
   width: 90%;
   margin: 0 auto;
-  height: 25vh;
+  height: auto;
+  min-height: 25vh;
 }

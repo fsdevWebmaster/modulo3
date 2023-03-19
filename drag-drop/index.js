@@ -2,10 +2,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".item");
   items.forEach(item => {
     item.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("myData", item);
-      e.dataTransfer.dropEffect = "copy";
+      e.dataTransfer.setData("itemId", e.target.id);
 
-      console.log("drag start.");
+      console.log("drag start.", item);
 
     });
   });
@@ -20,11 +19,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
   dropZone.addEventListener("drop", (e) => {
     e.preventDefault();
-    const data = e.dataTransfer.getData("myData");
+    const data = e.dataTransfer.getData("itemId");
+    const tal = document.getElementById(data);
 
-    dropZone.innerHTML = data;
+    e.target.appendChild(tal);
 
     console.log("drop:", data);
+    
+    // dropZone.innerHTML = data;
+    // dropZone.appendChild(data);
+
 
   });
 
