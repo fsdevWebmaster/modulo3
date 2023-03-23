@@ -10,6 +10,11 @@
 
 body {
   background-color: #000;
+  color: #fff;
+}
+
+body.favorites {
+  background-color: #424242;
 }
 
 h1, h2 {
@@ -40,7 +45,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
 }
 
 .menu-btn {
@@ -67,6 +71,17 @@ h2 {
 
 .listen-families p {
   max-width: 100%;
+}
+
+.related-piece.btn {
   color: #fff;
+}
+
+.d-family {
+  border: 1px solid;
+}
+
+.spot {
+  border: 1px solid;
 }
 

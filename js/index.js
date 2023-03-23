@@ -6,10 +6,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const familyName = document.URL.split("?")[1];
   const family = families[familyName];
-
-  
-  familyTitle.innerHTML = family.title;
-
-  console.log(family);
-
+  if (familyName && family) {
+    familyTitle.innerHTML = family.title;
+    familyText.innerHTML = family.text;
+    pieceTitle.innerHTML = family.piece;
+    pieceAuthor.innerHTML = family.author;
+    familyBg.style.backgroundImage = `url('${family.bgUrl}')`;
+    pieceBtn.setAttribute("href", family.video);
+  }  
 });
