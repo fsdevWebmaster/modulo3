@@ -1,4 +1,5 @@
 const menuBtn = document.getElementById("menu-btn");
+const backBtn = document.getElementById("back-btn");
 const mainNavBtns = document.querySelectorAll(".menu-container a");
 const familyTitle = document.querySelector(".family-info h1");
 const familyText = document.querySelector(".family-info p");

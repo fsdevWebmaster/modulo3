@@ -1,6 +1,9 @@
 const families = document.querySelectorAll(".d-family");
 const spots = document.querySelectorAll(".spot");
 
+menuBtn.addEventListener("click", () => {
+  window.location.href = "/pages/menu.html";
+});
 
 const allowDrop = (e) => {
   e.preventDefault();

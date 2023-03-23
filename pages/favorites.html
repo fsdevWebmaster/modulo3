@@ -11,55 +11,107 @@
   <link rel="stylesheet" href="./../css/styles.css">
 </head>
 <body class="favorites">
-    <div class="pages-top">
+  <div class="pages-top">
     <span id="menu-btn" class="menu-btn">
       <img src="./../images/menu-icon.png" id="menu-btn" alt="menu-icon">
     </span>
-    <div id="listen-families" class="listen-families mt-5 me-5">
+    <div id="listen-families" class="listen-families mt-2 me-2">
       <img src="./../images/headphones.png" alt="listen btn">
-      <p class="text-center">Escucha las familias de instrumentos musicales</p>
+      <br>
+      <a href="https://www.youtube.com/watch?v=4vbvhU22uAM" target="_blank" 
+        class="hear-btn text-center">
+        Escucha las familias de instrumentos musicales
+      </a>
     </div>
   </div>
 
-  <main>
+  <main class="container">
     <h1>Tu familia favorita</h1>
     <p>Puedes ordenar las familias de instrumentos según tu gusto personal.</p>
 
     <div class="row">
-      <div class="list-container col">
-        <div class="spot" 
+      <div class="spots-container col mx-4">
+        <div class="spot p-4" 
           id="spot1"
           ondrop="handleDrop(event)"
           ondragover="allowDrop(event)" 
         >
-          <img src="./../images/1.png" alt="1">
+          <img class="me-4" src="./../images/1.png" alt="1">
+        </div>
+        <div class="spot p-4" 
+          id="spot2"
+          ondrop="handleDrop(event)"
+          ondragover="allowDrop(event)" 
+        >
+          <img class="me-4" src="./../images/2.png" alt="2">
+        </div>
+        <div class="spot p-4" 
+          id="spot3"
+          ondrop="handleDrop(event)"
+          ondragover="allowDrop(event)" 
+        >
+          <img class="me-4" src="./../images/3.png" alt="3">
+        </div>
+        <div class="spot p-4" 
+          id="spot4"
+          ondrop="handleDrop(event)"
+          ondragover="allowDrop(event)" 
+        >
+          <img class="me-4" src="./../images/4.png" alt="4">
+        </div>
+        <div class="spot p-4" 
+          id="spot5"
+          ondrop="handleDrop(event)"
+          ondragover="allowDrop(event)" 
+        >
+          <img class="me-4" src="./../images/5.png" alt="5">
         </div>
       </div>
 
-      <div class="families-container col">
-        <div class="d-family" 
+      <div class="families-container col"
+        id="families-container"
+        ondrop="handleDrop(event)" 
+        ondragover="(allowDrop(event))">
+        <div class="d-family p-3 mb-4 text-center" 
           id="strings"
           draggable="true"
           ondragstart="handleDrag(event)" 
         >
           Cuerdas
         </div>
-        <!-- <div class="d-family" data-family="woods" draggable="true" ondragstart="handleDrag(event)">
+        <div class="d-family p-3 mb-4 text-center" 
+          id="woods"
+          draggable="true"
+          ondragstart="handleDrag(event)" 
+        >
           Maderas
         </div>
-        <div class="d-family" data-family="horns" draggable="true">
+        <div class="d-family p-3 mb-4 text-center" 
+          id="horns"
+          draggable="true"
+          ondragstart="handleDrag(event)" 
+        >
           Metales
         </div>
-        <div class="d-family" data-family="percusion" draggable="true">
+        <div class="d-family p-3 mb-4 text-center" 
+          id="percusion"
+          draggable="true"
+          ondragstart="handleDrag(event)" 
+        >
           Percusión
         </div>
-        <div class="d-family" data-family="harp" draggable="true">
+        <div class="d-family p-3 mb-4 text-center" 
+          id="harp"
+          draggable="true"
+          ondragstart="handleDrag(event)" 
+        >
           Arpa y Piano
-        </div> -->
+        </div>
       </div>
     </div>
   </main>
   
+  <script src="./../js/domElements.js"></script>
   <script src="./../js/favorites.js"></script>
 </body>
 </html>
